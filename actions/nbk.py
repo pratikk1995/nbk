@@ -1,4 +1,5 @@
 import sys
+import json
 import requests
 from st2common.runners.base_action import Action
 class Myclass:
@@ -13,6 +14,6 @@ class Myclass:
             print(r)
             print(y)
       except requests.exceptions.Timeout:
-            print("timeout")
-            sys.exit(0)
+             print("timeout")
+             sys.exit(0)
     
