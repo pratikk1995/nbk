@@ -3,7 +3,7 @@ import json
 import requests
 from st2common.runners.base_action import Action
 class Myclass:
-    def run(self,id,title,timeout):
+    def run(self,id,title):
       try:
             x = {"ID": id, "TITLE": title}
             x1= json.dumps(x)
