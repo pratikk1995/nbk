@@ -6,8 +6,13 @@ description: trying an action to get url response!
 enabled: true
 entry_point: nbk.py
 parameters:
-     url:
+     id:
+        type: integer
+        description:book id  
+        required: true
+        position: 0
+     title:
         type: string
-        description: APIs url 
+        description:book title 
         required: true
         position: 1
