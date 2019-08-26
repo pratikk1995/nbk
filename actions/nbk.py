@@ -5,7 +5,7 @@ class Myclass:
     def run(self,id,title):
       try:
             x = {"ID": id, "TITLE": title}
-            x1=json.dumps(x)
+            x1= json.dumps(x)
             url='https://fakerestapi.azurewebsites.net/api/Books'
             header='Content-Type: application/json'
             r = requests.post(url, header=header, data = x1)
