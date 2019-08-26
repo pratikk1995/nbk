@@ -12,7 +12,8 @@ class Myclass:
             y= r.json()
             print(r)
             print(y)
-      except: requests.exceptions.Timeout:
+      except: 
+            requests.exceptions.Timeout:
             print("timeout")
             sys.exit(0)
     
