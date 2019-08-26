@@ -6,7 +6,7 @@ class Myclass:
       try:
             x = { "ID":id,"TITLE":title}
             x1=json.dumps(x)
-            r = requests.post('https://fakerestapi.azurewebsites.net/api/Books',x = x1)
+            r = requests.post('https://fakerestapi.azurewebsites.net/swagger/ui/index#/',x = x1)
             print(r)
       except requests.exceptions.Timeout:
             print("timeout")
