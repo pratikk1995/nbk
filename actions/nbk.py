@@ -3,9 +3,9 @@ import json
 import requests
 from st2common.runners.base_action import Action
 class Myclass(Action):
-    def run(self,id,title):
+    def run(self,id,title,descp,pgcount,excerpt,pubdate):
       try:
-            x = {"ID": id, "TITLE": title, "Description": desc, "PageCount":pgc, "Excerpt": exc, "PublishDate": pbd }
+            x ={"ID":id,"Title":title,"Description": descp,"PageCount": pgcount,"Excerpt": excerpt,  "PublishDate": pubdate}
             x1= json.dumps(x)
             url='https://fakerestapi.azurewebsites.net/api/Books'
             headers='Content-Type: application/json'
