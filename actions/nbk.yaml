@@ -2,7 +2,7 @@
 name: scout
 pack: nbk
 runner_type: "python-script"
-description: trying an action to get url response!
+description: trying an action to show book id!
 enabled: true
 entry_point: nbk.py
 parameters:
