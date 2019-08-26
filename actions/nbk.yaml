@@ -1,0 +1,13 @@
+---
+name: scout
+pack: nbk
+runner_type: "python-script"
+description: trying an action to get url response!
+enabled: true
+entry_point: nbk.py
+parameters:
+     url:
+        type: string
+        description: APIs url 
+        required: true
+        position: 1
