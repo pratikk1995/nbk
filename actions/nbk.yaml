@@ -8,11 +8,11 @@ entry_point: nbk.py
 parameters:
      id:
         type: integer
-        description:book id  
+        description: book id  
         required: true
         position: 0
      title:
         type: string
-        description:book title 
+        description: book title 
         required: true
         position: 1
