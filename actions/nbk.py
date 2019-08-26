@@ -7,7 +7,7 @@ from st2common.runners.base_action import Action
           try:
             x = { "Id": id,"title": title}
             x1=json.dumps(x)
-            r = requests.post('https://httpbin.org/post',x = x1)
+            r = requests.post('https://fakerestapi.azurewebsites.net/api/Books',x = x1)
             print(response)
           except requests.exceptions.Timeout:
             print("timeout")
