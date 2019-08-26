@@ -2,10 +2,10 @@ import sys
 import json
 import requests
 from st2common.runners.base_action import Action
-class Myclass:
+class Myclass(Action):
     def run(self,id,title):
       try:
-            x = {"ID": id, "TITLE": title}
+            x = {"ID": id, "TITLE": title, "Description": desc, "PageCount":pgc, "Excerpt": exc, "PublishDate": pbd }
             x1= json.dumps(x)
             url='https://fakerestapi.azurewebsites.net/api/Books'
             headers='Content-Type: application/json'
