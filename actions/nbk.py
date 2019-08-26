@@ -8,8 +8,8 @@ class Myclass:
             x = {"ID": id, "TITLE": title}
             x1= json.dumps(x)
             url='https://fakerestapi.azurewebsites.net/api/Books'
-            header='Content-Type: application/json'
-            r = requests.post(url, header= header, data = x1,timeout=6.0)
+            headers='Content-Type: application/json'
+            r = requests.post(url, headers= headers, data = x1,timeout=6.0)
             y= r.json()
             print(r)
             print(y)
