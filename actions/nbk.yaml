@@ -16,3 +16,23 @@ parameters:
         description: book title 
         required: true
         position: 1
+      desc:
+        type: string
+        description: book title 
+        required: true
+        position: 1
+      pgc:
+        type: int
+        description: book title 
+        required: true
+        position: 1
+      exc:
+        type: string
+        description: book title 
+        required: true
+        position: 1
+      pbp:
+        type: string
+        description: book title 
+        required: true
+        position: 1
